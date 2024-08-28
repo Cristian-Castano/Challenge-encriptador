@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header href="index.html">
+        <img class="Logo" src="./assets/Logo.png" alt="Logo de Alura Latam">
+    </header>
+    <div class="caja">
+        <div class="caja__encriptar">
+            <textarea 
+            class="caja__encriptar__ingreso" 
+            id="ingreso" 
+            name="ingreso" 
+            rows="50" 
+            cols="60"
+            placeholder="Ingrese el texto aquí"
+            ></textarea>
+        </div>
+        <div class="caja__aviso">
+            <p><img src="./assets/Group.png">
+                solo letras minúsculas y sin acento.</p>
+        </div>
+        <div class="caja__botones">
+            <button class="caja__botones__encriptar"
+            type="button"
+            onclick="encriptar()">
+                Encriptar
+            </button>
+            <button class="caja__botones__desencriptar"
+            type="button"
+            onclick="desencriptar()">
+                Desencriptar
+            </button>
+        </div>
+        <div class="texto__encriptado">
+        <img src="./assets/Muñeco.png" alt="Un muñeco con lupa" id="muneco">
+        <div class="texto__encriptado__salida" id="texto__encriptado__salida">
+            <h3 id="mensaje">Ningún mensaje fue encontrado</h3>
+            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="texto__encriptado__boton">
+                <button class="texto__encriptado__boton__copiar"
+                type="button"
+                onclick="copiar()">
+                Copiar
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+<footer class="pie"> Desarrollado por Cristian Castaño Alvarez</footer>
+</html>
